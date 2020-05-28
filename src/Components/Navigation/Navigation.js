@@ -18,3 +18,17 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+
+
+// const getItem = () => {
+//   const getData = () => {};
+
+//   return (
+//     <div>
+//       <h3>`${card-title}`</h3>
+//       <h4>`${card-price}`</h4>
+//       <h4>`${card-descrip}`</h4>
+//     </div>
+//   )
+// }

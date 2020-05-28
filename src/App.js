@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
-import Navigation from './Navigation/Navigation';
-import About from './About/About';
-import Contact from './Contact/Contact';
+import Navigation from './Components/Navigation/Navigation';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 
 const App = () => {
 
@@ -21,11 +22,5 @@ const App = () => {
     </Router>
   );
 }
-
-const Home = () => (
-  <div>
-    <h1>Home</h1>
-  </div>
-)
 
 export default App;
