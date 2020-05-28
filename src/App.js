@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import Navigation from './Navigation/Navigation';
 import About from './About/About';
 import Contact from './Contact/Contact';
+import Gallery from './Gallery/Gallery';
+
+
 
 const App = () => {
 
@@ -25,6 +28,8 @@ const App = () => {
 const Home = () => (
   <div>
     <h1>Home</h1>
+
+    <Gallery />
   </div>
 )
 
