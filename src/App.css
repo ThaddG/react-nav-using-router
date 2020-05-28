@@ -1,0 +1,6 @@
+.App {
+  margin: 0 auto;
+  max-width: 960px;
+  /* for testing purpose */
+  background-color: #eee;
+}
