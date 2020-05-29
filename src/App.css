@@ -1,6 +1,13 @@
+:root {
+  /* apply these as background colors until official scheme is made */
+  --app-test-color: #eee;
+  --nav-test-color: coral;
+  --gallery-test-color: peachpuff;
+  --card-test-color: lightblue;
+}
+
 .App {
   margin: 0 auto;
   max-width: 960px;
-  /* for testing purpose */
-  background-color: #eee;
+  background-color: var(--app-test-color);
 }

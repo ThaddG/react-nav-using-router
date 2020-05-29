@@ -1,5 +1,5 @@
 .Gallery-outer {
-  background-color: peachpuff;
+  background-color: var(--gallery-test-color);
   width: 95%;
   padding: 2.5%;
 }
@@ -11,7 +11,7 @@
 }
 
 .card {
-  background-color: lightblue;
+  background-color: var(--card-test-color);
   display: flex;
   flex-direction: column;
   justify-content: center;

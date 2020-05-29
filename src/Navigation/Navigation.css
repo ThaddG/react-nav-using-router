@@ -1,5 +1,5 @@
 .Navigation {
-  background-color: coral;
+  background-color: var(--nav-test-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,4 +22,18 @@
 .selected {
   color: green;
   border-bottom: 2px solid purple;
+}
+
+@media only screen and (max-width: 440px) {
+  .Navigation {
+    flex-direction: column;
+  }
+  .Navigation ul {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navigation ul li {
+    padding: 5px 0;
+  }
 }

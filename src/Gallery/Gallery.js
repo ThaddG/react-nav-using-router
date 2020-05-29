@@ -20,13 +20,13 @@ const Gallery = () => {
   return(
     <div className="Gallery-outer">
       <div className="Gallery-inner">
-        <Card title="tidal" description="No flex-hate here" price="$400" />
-        <Card title="spotify" description="No grid-hate here" price="$350" />
-        <Card title="apple" description="No boob-hate here" price="$240" />
-        <Card title="zoom" description="No china-hate here" price="$220" />
-        <Card title="apple" description="No boob-hate here" price="$240" />
-        <Card title="apple" description="No boob-hate here" price="$240" />
-        <Card title="apple" description="No boob-hate here" price="$240" />
+        <Card title="tidal" description="Just some filler text" price="$400" />
+        <Card title="spotify" description="Just some filler text" price="$350" />
+        <Card title="apple" description="Just some filler text" price="$240" />
+        <Card title="zoom" description="Just some filler text" price="$220" />
+        <Card title="amazon" description="Just some filler text" price="$240" />
+        <Card title="facebook" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
       </div>
 
       {/* <button className="add-card-button" onClick={addItem}>Clicc me</button> */}
