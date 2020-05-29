@@ -1,14 +1,19 @@
+.logo {
+  color: #F3E8EE;
+}
 .Navigation {
+  min-height: 7vh;
   background-color: var(--nav-test-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 10px 20px;
 }
 .Navigation a {
   text-decoration: none;
+  color: #F3E8EE;
 }
+
 .Navigation ul {
   list-style: none;
   display: flex;
@@ -18,13 +23,15 @@
   padding: 0 10px;
   font-size: 20px;
 }
-
+.Navigation a.selected {
+  color: #BACDB0;
+}
 .selected {
-  color: green;
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid seashell;
+  transition: ease-in 200ms color;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 600px) {
   .Navigation {
     flex-direction: column;
   }

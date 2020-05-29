@@ -1,9 +1,11 @@
 .Gallery-outer {
   background-color: var(--gallery-test-color);
-  width: 95%;
+  width: 100%;
   padding: 2.5%;
 }
 .Gallery-inner {
+  max-width: 1000px;
+  margin: auto;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -12,10 +14,18 @@
 
 .card {
   background-color: var(--card-test-color);
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .Gallery-inner {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+  }
 }

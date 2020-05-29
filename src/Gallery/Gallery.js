@@ -21,6 +21,15 @@ const Gallery = () => {
         <Card title="amazon" description="Just some filler text" price="$240" />
         <Card title="facebook" description="Just some filler text" price="$240" />
         <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
+        <Card title="netflix" description="Just some filler text" price="$240" />
       </div>
     </div>
   )

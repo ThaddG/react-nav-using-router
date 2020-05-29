@@ -5,8 +5,7 @@ import './App.css';
 import Navigation from './Navigation/Navigation';
 import About from './About/About';
 import Contact from './Contact/Contact';
-import Gallery from './Gallery/Gallery';
-
+import Home from './Home/Home'
 
 
 const App = () => {
@@ -24,13 +23,5 @@ const App = () => {
     </Router>
   );
 }
-
-const Home = () => (
-  <div>
-    <h1>Home</h1>
-
-    <Gallery />
-  </div>
-)
 
 export default App;

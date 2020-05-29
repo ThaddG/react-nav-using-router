@@ -6,7 +6,7 @@ import './Navigation.css';
 const Navigation = () => {
   return(
     <nav className="Navigation">
-      <div className="logo">LOGO</div>
+      <div className="logo">Student Programmers</div>
       <ul>
         <NavLink activeClassName="selected" to="/" exact><li>Home</li></NavLink>
         <NavLink activeClassName="selected" to="/about"><li>About</li></NavLink>
