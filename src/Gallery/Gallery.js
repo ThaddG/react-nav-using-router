@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './Gallery.css';
 
@@ -11,12 +11,6 @@ const Card = ({ title, description, price }) => (
 );
 
 const Gallery = () => {
-  const [items, setItems] = useState([]);
-
-  const addItem = (item) => {
-    setItems(items.concat(item));
-  }
-
   return(
     <div className="Gallery-outer">
       <div className="Gallery-inner">
@@ -28,10 +22,7 @@ const Gallery = () => {
         <Card title="facebook" description="Just some filler text" price="$240" />
         <Card title="netflix" description="Just some filler text" price="$240" />
       </div>
-
-      {/* <button className="add-card-button" onClick={addItem}>Clicc me</button> */}
     </div>
-    
   )
 };
 
