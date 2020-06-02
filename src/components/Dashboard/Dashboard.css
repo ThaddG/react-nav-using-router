@@ -1,0 +1,145 @@
+:root {
+    --darkgr: #273043; /* darkest */
+    --darkgr--rgb: 39, 48, 67;
+    --gray: #9197AE;  /* steel */
+    --lBLue: #BDD4E7;
+    --clay: #637074;  
+    --white: #F8F3F1; /* lightest */
+    --altWhite: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body #shazam-cont {
+    display: grid;
+
+    height: 100%;
+    width: 100%;
+
+    grid-template-columns: minmax(250px, 280px) auto;
+    grid-template-rows: minmax(50px, 70px) auto auto;
+    grid-template-areas: 
+    "sn rn" 
+    "sn rn"
+    "f f" ;
+}
+
+/* left side */
+
+/* moved to its own component */
+
+
+/* right side */
+
+#shazam-cont #right-cont {
+    grid-area: rn;
+    background: var(--white);
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40px minmax(auto,20px) minmax(0.3fr,0.5fr) 2fr;
+}
+
+.top-header {
+    background-color: rgba(var(--darkgr--rgb), 0.99);  /*#314163*/
+    color: var(--white);
+    filter: hue-rotate(20deg);
+}
+
+.top-header .inner-top-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.top-header li {
+    padding: 0 10px 0 10px;
+    background-color: var(--clay);
+    color: var(--white);
+    /* margin-top: 10px; */
+    height:100%;
+    align-self: center;
+}
+
+.dash-header {
+    font-size: 2.5rem;
+    width: 100%;
+    /* border-bottom: solid rgba(0,0,0,1) 1px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    /* margin-bottom: 40px; */
+    padding-left: 20px;
+}
+
+/*  cards  */
+.under-graph {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 0.7fr;
+    /* position: relative; */
+    /* top: 100px; */
+
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#table-cont {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+}
+
+#cards{
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .3);
+    
+    /* width: 18rem; */
+}
+
+.card-cont #cards:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+}
+
+
+@media (max-width: 1000px) {
+
+    body #shazam-cont {
+        display: grid;
+    
+        height: 100%;
+        width: 100%;
+    
+        grid-template-columns: auto;
+        grid-template-rows: minmax(50px, 70px) auto auto;
+        grid-template-areas: 
+        "rn" 
+        "rn"
+        "f" ;
+    }
+
+    #shazam-cont #nav {
+        background: pink;
+        display: none;
+    }
+
+    #shazam-cont #right-cont {
+        padding-left: 0;
+    }
+
+    .Graph {
+        /* min-height: inherit; */
+        /* max-height: 10rem; */
+        /* padding-left: 5px; */
+        height: 60vh;
+        width: 98%;
+        
+        margin-left: 0px;
+        
+    }
+
+
+
+    /* last item */
+}

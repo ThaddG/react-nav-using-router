@@ -1,0 +1,15 @@
+.Graph {
+    /* min-height: inherit; */
+    /* max-height: 10rem; */
+    padding: 0px 20px 0px 10px;
+    height: 60vh;
+    width: 98%;
+    
+    
+    margin-left: 10px;
+    
+}
+
+#graph-inside {
+
+}
