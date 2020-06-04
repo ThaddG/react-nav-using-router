@@ -24,8 +24,8 @@ const Graph = (props) => {
     // };
 
     const data = [
-        {day: "6/1", quantity: 0},
-        {day: "6/1", quantity: 1},
+        // {day: "6/1", quantity: 3},
+        {day: "6/1", quantity: 4},
         {day: "6/2", quantity: 2},
         {day: "6/3", quantity: 4},
         {day: "6/4", quantity: 3},
@@ -52,7 +52,8 @@ const Graph = (props) => {
                 backgroundColor: '#E6EBE0',
                 borderColor: '#9BC1BC',
                 borderWidth: 1,
-                data: quantities,
+                data: [...quantities],
+                // TODO: basedata, look this up
             }]
         });
 
@@ -68,7 +69,14 @@ const Graph = (props) => {
                 <Bar id="graph-inside" data={chartData} options={{
                     responsive: true,
                     title: {text: 'Amount Sold'},
-                    maintainAspectRatio: false
+                    maintainAspectRatio: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
                 }}/>
         </div> 
     );

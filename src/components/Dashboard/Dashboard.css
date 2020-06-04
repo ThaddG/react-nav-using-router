@@ -80,7 +80,7 @@ body #shazam-cont {
 .under-graph {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 0.7fr;
+    grid-template-rows: 1fr 0.3fr;
     /* position: relative; */
     /* top: 100px; */
 
