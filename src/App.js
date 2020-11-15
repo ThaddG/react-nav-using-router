@@ -8,6 +8,7 @@ import Contact from './Contact/Contact';
 import Gallery from './Gallery/Gallery';
 
 // pointless comment that does nothing
+// another pointless comment that does nothing
 
 const App = () => {
 
