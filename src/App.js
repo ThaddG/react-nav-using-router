@@ -7,7 +7,7 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Gallery from './Gallery/Gallery';
 
-
+// pointless comment that does nothing
 
 const App = () => {
 
